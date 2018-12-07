@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>结果</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">约束计算器</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <h3>结果页面</h3>
+    <p>
+      数字<%=number%>的因数如下：
+    </p>
+    <ul>
+    <%
+        for(var i=0;i<resultsArr.length;i++){
+    %>
+            <li><%=resultsArr[i]%></li>
+    <%
+        }
+    %>
+  </ul>
+  </div>
+</div>
+  </body>
+</html>
